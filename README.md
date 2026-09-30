@@ -188,12 +188,21 @@ so the same parts move from the protoboard build to the board.
 - Layout: the MIA Pico is at the top left, with its USB port on the top edge
   and its Wi-Fi antenna over a copper keep-out. The microSD breakout sits to
   its left, with the card slot at the left board edge. The audio stage and jack
-  run down the left edge, and the reset button sits below the Pico. The CPU,
+  run down the left edge, and the reset button sits well below the Pico. The CPU,
   RAM, extended RAM and VIA form one row, with the user port at the right edge.
   The glue logic is in a row below them, and the two expansion headers are
   stacked along the bottom edge.
 - Every chip has a 100 nF capacitor next to its supply pin; C14 (22 µF) is by
   the Pico's 3V3 pin.
+- Wi-Fi antenna: Raspberry Pi recommends putting the Pico W's antenna at a
+  board edge with nothing close to it. Here it sits inside the board, as on the
+  Picocomputer RP6502. The Pico stands about 10 mm up on its headers, no copper
+  runs under the antenna, and a rule area ("Wi-Fi antenna clearance") keeps
+  tracks, vias and ground fill about 6 mm past the Pico's end. Leave that area
+  clear of parts and cables. The expected cost is a few dB of range, which the
+  video protocol tolerates. To check a build, compare the Wi-Fi signal
+  strength (RSSI) of the Pico on its own and on the board at the same spot; if
+  the board costs more than about 6 dB, move the antenna to an edge in rev 2.
 - Routing: 0.25 mm signal tracks, 0.4 mm for GND, +3.3V and +5V (net class
   `Power`), 0.2 mm clearance, and 0.6 / 0.3 mm vias. The top layer runs mostly
   horizontal and the bottom mostly vertical. Both layers carry a GND pour,
