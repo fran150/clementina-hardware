@@ -1645,7 +1645,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9802a2c3-fd5e-473c-b77a-1a9b54132c40")
-		(property "Reference" "U5"
+		(property "Reference" "U7"
 			(at 140.9617 82.55 0)
 			(effects
 				(font
@@ -1653,7 +1653,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "74HC08"
 			(at 140.9617 85.09 0)
 			(effects
 				(font
@@ -1733,7 +1733,7 @@
 		(instances
 			(project "Clementina-6502-Pico"
 				(path "/ddb0bb09-4973-4322-81e7-cdd57ff08282/6573b204-c090-453b-93ea-80574efd277d"
-					(reference "U5")
+					(reference "U7")
 					(unit 2)
 				)
 			)

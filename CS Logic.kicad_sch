@@ -2735,6 +2735,22 @@
 		)
 		(uuid "e921be8d-1c9f-4b7d-af81-d23d388ca15c")
 	)
+	(no_connect
+		(at 99.06 68.58)
+		(uuid "9275b539-02e7-406d-9d3d-4938dfd67705")
+	)
+	(no_connect
+		(at 99.06 71.12)
+		(uuid "ec07a016-0413-4613-bdc5-c42cb18cc808")
+	)
+	(no_connect
+		(at 99.06 73.66)
+		(uuid "5bc388c4-c97b-4d19-ae9e-9812e19e8bca")
+	)
+	(no_connect
+		(at 99.06 76.2)
+		(uuid "034d82d2-1c4c-461e-aba8-b2717c8fad92")
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 142.24 74.93 0)
@@ -2949,7 +2965,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "74HC08"
 			(at 129.5317 78.74 0)
 			(effects
 				(font
