@@ -1,12 +1,13 @@
 # Clementina Hardware
 
-KiCad 9 schematic for Clementina, a 3.3 V homebrew computer built around a
-W65C02S CPU. A Raspberry Pi Pico 2 W, called MIA, runs the machine: it
+KiCad 9 schematic and board for Clementina, a 3.3 V homebrew computer built
+around a W65C02S CPU. A Raspberry Pi Pico 2 W, called MIA, runs the machine: it
 generates the CPU clock, boots the kernel, and provides video, audio, storage
 and input.
 
-Status: the rev 1 schematic is complete and ERC-clean. The board layout is not
-started. The first build is planned on protoboard.
+Status: the rev 1 schematic is complete and ERC-clean, and the rev 1 board is
+laid out, fully routed and DRC-clean. The first build is planned on
+protoboard, using the same parts as the board.
 
 ## Opening the project
 
@@ -19,6 +20,12 @@ Open `clementina-hardware.kicad_pro` in KiCad 9.
   without that library. Install it to keep ERC's library check clean.
 - One ERC item is excluded on purpose: the Pico's AGND tied to GND. The ADC is
   unused, and the Pico datasheet allows the join.
+- `clementina-hardware.kicad_dru` holds one custom DRC rule: the audio jack's
+  barrel hangs over the board edge on purpose, so its silkscreen outline may
+  cross the edge.
+- DRC shows one warning, and it is expected: the Pico footprint "does not
+  match the copy in the library". The library's antenna keep-out lists 32
+  copper layers, and a 2-layer board keeps only two of them.
 
 Sheets:
 
@@ -131,19 +138,78 @@ Rules for cards on J1-J3:
 - W65C22S port pins have no current limiting. Drive LEDs and similar loads
   through a resistor.
 
-**J4: audio out.** A stereo 3.5 mm jack: tip left, ring right. Each channel
+**J4: audio out.** A stereo 3.5 mm jack (CUI SJ1-3533NG, through-hole, round
+pins): tip left, ring right. Each channel
 uses the same output stage as the Picocomputer RP6502: a 220 Ω / 100 Ω
 divider, a 100 nF filter capacitor, a 47 µF DC block and a 1.8 kΩ bleed
 resistor. It gives about 1 Vpp line level and drives headphones directly. MIA
 mixes at 48 kHz.
 
-**J5: microSD.** SPI mode on MIA's SPI0: 400 kHz to initialise, then 12 MHz.
-RN1 (4 x 10 kΩ) pulls up CS, MISO and the unused DAT1 and DAT2 lines. On
-protoboard, a 3 V-only breakout board works in place of the bare socket.
+**J5: microSD.** A 1x9 female header for the Adafruit 4682 microSD breakout
+(3 V only), used in SPI mode on MIA's SPI0: 400 kHz to initialise, then
+12 MHz. The breakout has its own pull-ups (CS, MISO, DAT1, DAT2) and bypass
+capacitors. DAT1, DAT2 and card detect stay unconnected.
+
+| Pin | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Breakout | 3V | GND | CLK | SO | SI | CS | DAT1 | DAT2 | DET |
+| Signal | +3.3V | GND | SD_SCK | SD_MISO | SD_MOSI | SD_CS | - | - | - |
+
+## Board (rev 1)
+
+`clementina-hardware.kicad_pcb`: 172.7 x 108.6 mm, 2 layers, every part
+through-hole. The chips sit in sockets and the Pico plugs into female headers,
+so the same parts move from the protoboard build to the board.
+
+- Layout: the MIA Pico is at the top left, with its USB port on the top edge
+  and its Wi-Fi antenna over a copper keep-out. The microSD breakout sits to
+  its left, with the card slot at the left board edge. The audio stage and jack
+  run down the left edge, and the reset button sits below the Pico. The CPU,
+  RAM, extended RAM and VIA form one row, with the user port at the right edge.
+  The glue logic is in a row below them, and the two expansion headers are
+  stacked along the bottom edge.
+- Every chip has a 100 nF capacitor next to its supply pin; C14 (22 µF) is by
+  the Pico's 3V3 pin.
+- Routing: 0.25 mm signal tracks, 0.4 mm for GND, +3.3V and +5V (net class
+  `Power`), 0.2 mm clearance, and 0.6 / 0.3 mm vias. The top layer runs mostly
+  horizontal and the bottom mostly vertical. Both layers carry a GND pour,
+  stitched with vias. Any hobby PCB fab can make it (1.6 mm FR-4, 1 oz copper).
+- The routing was produced by a script and then checked with KiCad's DRC and
+  its schematic parity check. Edit it freely in KiCad.
+- Silkscreen: part values are printed on the resistors and capacitors, and the
+  chip names inside the socket outlines. The J5 pin names and the breakout's
+  outline are printed too.
+- Mounting: four M3 holes in the corners. Two M2.5 holes under the microSD
+  breakout match its own holes. They're optional, to support it with
+  standoffs (about 11 mm).
+
+Parts beyond the schematic's own list:
+
+| Qty | Part |
+| ---: | --- |
+| 2 | DIP-40 socket (U1, U3) |
+| 1 | DIP-32 socket (U2) |
+| 1 | DIP-28 socket (U4) |
+| 2 | DIP-16 socket (U6, U8) |
+| 2 | DIP-14 socket (U7, U9) |
+| 2 | 1x20 female header, 2.54 mm (the Pico, with male headers soldered to it) |
+| 1 | 1x9 female header, 2.54 mm (J5) |
+| 1 | Adafruit 4682 microSD breakout |
+
+Footprints: resistors are 1/4 W axial parts at 10.16 mm lead spacing.
+Ceramic capacitors use 5 mm lead spacing; parts with 2.54 mm leads fit if
+you bend the leads. Electrolytics are 5 mm cans with 2.5 mm spacing. The
+diodes are BAT85 (DO-34), and the reset button is a 6 mm tactile switch.
+
+Fabrication files:
+
+```
+kicad-cli pcb export gerbers -l F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts -o fab/ clementina-hardware.kicad_pcb
+kicad-cli pcb export drill -o fab/ clementina-hardware.kicad_pcb
+```
 
 ## Not in rev 1
 
-- Board layout
 - A separate power input (USB-C into VSYS) with a jumper to power a USB
   keyboard on the Pico's port
 - Local video output, likely a second Pico as a display client

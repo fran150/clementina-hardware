@@ -1,0 +1,9 @@
+(version 1)
+
+# The audio jack's barrel hangs over the board edge on purpose (the plug needs it), so its
+# silkscreen outline crosses Edge.Cuts. Fabs clip silkscreen at the edge anyway.
+(rule "J4 barrel overhangs the board edge"
+	(layer F.SilkS)
+	(condition "A.memberOfFootprint('J4') && B.Layer == 'Edge.Cuts'")
+	(constraint silk_clearance)
+	(severity ignore))
