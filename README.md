@@ -32,8 +32,8 @@ Sheets:
 | Sheet | Contents |
 | --- | --- |
 | `clementina-hardware.kicad_sch` (A3) | CPU, VIA, RAM, MIA, IRQ and reset circuits, expansion headers, user port, audio output, microSD, power and decoupling |
-| `CS Logic.kicad_sch` | Address decoding (74HC138 x2, 74HC08, 74HC04) |
-| `OE_RW_PHI2_Sync.kicad_sch` | Read and write strobes: `~OE` from R/W, `~WE` qualified by PHI2 |
+| `CS Logic.kicad_sch` | Address decoding (74AC138 x2, 74AC08, two gates of the 74AC00) |
+| `OE_RW_PHI2_Sync.kicad_sch` | Read and write strobes: `~OE` from R/W, `~WE` qualified by PHI2 (two gates of the 74AC00) |
 
 ## Architecture
 
@@ -44,7 +44,7 @@ Sheets:
 | AS6C4008 (U2) | 512 KB extended RAM, seen through a 16 KB window |
 | W65C22S (U3) | VIA. Port A selects the extended RAM bank; port B and CA/CB go to the user port. |
 | Raspberry Pi Pico 2 W (A1) | MIA: clock, boot loader, video over Wi-Fi, audio, microSD, input, reset |
-| 74HC138 x2, 74HC08, 74HC04 | Glue logic |
+| 74AC138 x2, 74AC08, 74AC00 | Glue logic (see [Glue logic timing](#glue-logic-timing)) |
 
 Memory map:
 
@@ -70,6 +70,26 @@ MIA's pins:
 | GP26 | RESB (MIA holds the CPU and VIA in reset) |
 | GP27 | Reset request from the RESET button |
 | GP28 | Unused |
+
+### Glue logic timing
+
+The glue logic is 74AC, not 74HC, because 74HC is slow at 3.3 V (roughly
+13 ns per gate typical, up to about 30 ns). Two places depend on it:
+
+- **Write strobe.** `~WE = NAND(PHI2, ~OE)` in one 74AC00 gate, so `~WE`
+  rises within about 10 ns of PHI2 falling. The W65C02S only guarantees its
+  address and data for 10 ns after PHI2 falls, and the SRAMs need both held
+  until `~WE` rises. This timing doesn't depend on clock speed, so running
+  slower doesn't help. The Picocomputer RP6502 makes WE# the same way.
+- **Chip selects.** The VIA and the expansion cards need their chip select
+  10 ns before PHI2 rises. U6 is enabled straight from A13-A15 (A15
+  through one inverting gate), not through U8, which removes a decoder level
+  from those selects.
+
+With 74AC parts, the chip-select paths meet the datasheets up to about
+6.5 MHz with worst-case parts, and typical parts reach 8 MHz. 74HC parts give
+the same logic but lose the write-strobe guarantee, and the VIA's chip select
+limits them to about 3.5 MHz worst case.
 
 Interrupts are wired-AND: MIA and the VIA each pull `~IRQB` low through a BAT85
 Schottky diode against a 4.7 kΩ pull-up. `~NMI` (4.7 kΩ) and RDY (1 kΩ) are
