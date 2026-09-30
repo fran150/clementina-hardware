@@ -5,433 +5,7 @@
 	(uuid "89c8c7aa-9935-40b3-993b-39d93284f2e7")
 	(paper "A4")
 	(lib_symbols
-		(symbol "74xx:74HC04"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "74HC04"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Hex Inverter"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "HCMOS not inv"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DIP*W7.62mm* SSOP?14* TSSOP?14*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "74HC04_1_0"
-				(polyline
-					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output inverted
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74HC04_2_0"
-				(polyline
-					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output inverted
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74HC04_3_0"
-				(polyline
-					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output inverted
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74HC04_4_0"
-				(polyline
-					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output inverted
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74HC04_5_0"
-				(polyline
-					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output inverted
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74HC04_6_0"
-				(polyline
-					(pts
-						(xy -3.81 3.81) (xy -3.81 -3.81) (xy 3.81 0) (xy -3.81 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output inverted
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74HC04_7_0"
-				(pin power_in line
-					(at 0 12.7 270)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "74HC04_7_1"
-				(rectangle
-					(start -5.08 7.62)
-					(end 5.08 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "74xx:74LS08"
+		(symbol "74xx:74LS00"
 			(pin_names
 				(offset 1.016)
 			)
@@ -446,7 +20,7 @@
 					)
 				)
 			)
-			(property "Value" "74LS08"
+			(property "Value" "74LS00"
 				(at 0 -1.27 0)
 				(effects
 					(font
@@ -463,7 +37,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
+			(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls00"
 				(at 0 0 0)
 				(effects
 					(font
@@ -472,7 +46,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Quad And2"
+			(property "Description" "quad 2-input NAND gate"
 				(at 0 0 0)
 				(effects
 					(font
@@ -489,7 +63,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "TTL and2"
+			(property "ki_keywords" "TTL nand 2-input"
 				(at 0 0 0)
 				(effects
 					(font
@@ -498,7 +72,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DIP*W7.62mm*"
+			(property "ki_fp_filters" "DIP*W7.62mm* SO14*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -507,7 +81,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "74LS08_1_1"
+			(symbol "74LS00_1_1"
 				(arc
 					(start 0 3.81)
 					(mid 3.7934 0)
@@ -568,7 +142,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin output inverted
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -587,7 +161,7 @@
 					)
 				)
 			)
-			(symbol "74LS08_1_2"
+			(symbol "74LS00_1_2"
 				(arc
 					(start -3.81 3.81)
 					(mid -2.589 0)
@@ -698,7 +272,7 @@
 						)
 					)
 				)
-				(pin output inverted
+				(pin output line
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -717,7 +291,7 @@
 					)
 				)
 			)
-			(symbol "74LS08_2_1"
+			(symbol "74LS00_2_1"
 				(arc
 					(start 0 3.81)
 					(mid 3.7934 0)
@@ -778,7 +352,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin output inverted
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -797,7 +371,7 @@
 					)
 				)
 			)
-			(symbol "74LS08_2_2"
+			(symbol "74LS00_2_2"
 				(arc
 					(start -3.81 3.81)
 					(mid -2.589 0)
@@ -908,7 +482,7 @@
 						)
 					)
 				)
-				(pin output inverted
+				(pin output line
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -927,7 +501,7 @@
 					)
 				)
 			)
-			(symbol "74LS08_3_1"
+			(symbol "74LS00_3_1"
 				(arc
 					(start 0 3.81)
 					(mid 3.7934 0)
@@ -988,7 +562,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin output inverted
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -1007,7 +581,7 @@
 					)
 				)
 			)
-			(symbol "74LS08_3_2"
+			(symbol "74LS00_3_2"
 				(arc
 					(start -3.81 3.81)
 					(mid -2.589 0)
@@ -1118,7 +692,7 @@
 						)
 					)
 				)
-				(pin output inverted
+				(pin output line
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -1137,7 +711,7 @@
 					)
 				)
 			)
-			(symbol "74LS08_4_1"
+			(symbol "74LS00_4_1"
 				(arc
 					(start 0 3.81)
 					(mid 3.7934 0)
@@ -1198,7 +772,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin output inverted
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -1217,7 +791,7 @@
 					)
 				)
 			)
-			(symbol "74LS08_4_2"
+			(symbol "74LS00_4_2"
 				(arc
 					(start -3.81 3.81)
 					(mid -2.589 0)
@@ -1328,7 +902,7 @@
 						)
 					)
 				)
-				(pin output inverted
+				(pin output line
 					(at 7.62 0 180)
 					(length 3.81)
 					(name "~"
@@ -1347,7 +921,7 @@
 					)
 				)
 			)
-			(symbol "74LS08_5_0"
+			(symbol "74LS00_5_0"
 				(pin power_in line
 					(at 0 12.7 270)
 					(length 5.08)
@@ -1385,7 +959,7 @@
 					)
 				)
 			)
-			(symbol "74LS08_5_1"
+			(symbol "74LS00_5_1"
 				(rectangle
 					(start -5.08 7.62)
 					(end 5.08 -7.62)
@@ -1400,36 +974,6 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(wire
-		(pts
-			(xy 170.18 91.44) (xy 177.8 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bac5cd9-8b59-4ca1-837f-32bc899a9c65")
-	)
-	(wire
-		(pts
-			(xy 148.59 91.44) (xy 154.94 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e812c32-1e83-4934-a280-73082bc0f79d")
-	)
-	(wire
-		(pts
-			(xy 107.95 88.9) (xy 113.03 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "802119e6-4660-467a-91f2-917cfbb83ed9")
 	)
 	(wire
 		(pts
@@ -1532,223 +1076,14 @@
 		(uuid "e8131f10-259e-4600-be9a-f1cc312af8f2")
 	)
 	(symbol
-		(lib_id "74xx:74HC04")
-		(at 162.56 91.44 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18a1a6e7-5b81-4477-bbdd-11feb51657ba")
-		(property "Reference" "U9"
-			(at 162.56 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC04"
-			(at 162.56 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
-			(at 162.56 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf"
-			(at 162.56 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at 162.56 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "3aed77b9-7775-40a4-85e3-44ec1de8aa2c")
-		)
-		(pin "14"
-			(uuid "e0ce4a64-6f88-426f-bee9-e6537c38b644")
-		)
-		(pin "12"
-			(uuid "c6d5d86d-c04d-4812-a3be-7433fc14c9d2")
-		)
-		(pin "13"
-			(uuid "e3544555-3404-4387-8710-796f47e70f5f")
-		)
-		(pin "10"
-			(uuid "2f849d21-6514-4319-b400-b4f013007c3c")
-		)
-		(pin "11"
-			(uuid "149d9945-87b1-41ae-aa21-58f5bfa6f50f")
-		)
-		(pin "8"
-			(uuid "33508c24-4510-429b-8294-a90df6a43586")
-		)
-		(pin "9"
-			(uuid "63ac6bec-a0c6-4416-b719-0bb42d53bc71")
-		)
-		(pin "6"
-			(uuid "ba1352fb-6515-4308-8bf6-005190ee1fe8")
-		)
-		(pin "5"
-			(uuid "554cb152-ca8c-4636-b089-64803ff07374")
-		)
-		(pin "4"
-			(uuid "9785f373-4d08-4222-9880-d8a404112450")
-		)
-		(pin "3"
-			(uuid "b167c6f1-6100-4e04-aee8-8736b867b25e")
-		)
-		(pin "2"
-			(uuid "14c8e8ce-9618-48a4-9318-553255ad84fc")
-		)
-		(pin "1"
-			(uuid "e9798d3e-c831-4c5b-adc2-99ee9de20dc0")
-		)
-		(instances
-			(project "Clementina-6502-Pico"
-				(path "/ddb0bb09-4973-4322-81e7-cdd57ff08282/6573b204-c090-453b-93ea-80574efd277d"
-					(reference "U9")
-					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74LS08")
-		(at 140.97 91.44 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9802a2c3-fd5e-473c-b77a-1a9b54132c40")
-		(property "Reference" "U7"
-			(at 140.9617 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC08"
-			(at 140.9617 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
-			(at 140.97 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 140.97 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad And2"
-			(at 140.97 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b0c68cd6-4f63-451a-9054-8006739b9825")
-		)
-		(pin "2"
-			(uuid "cacef3a8-3b89-4211-8a9a-1fc03f960eb7")
-		)
-		(pin "3"
-			(uuid "5a269539-6d63-4020-84fe-3483c13a1db7")
-		)
-		(pin "4"
-			(uuid "0c2dd7ad-caff-4278-8b28-f7bc006b28a1")
-		)
-		(pin "5"
-			(uuid "10a5a919-572f-4553-a60d-2f33106e2a9b")
-		)
-		(pin "6"
-			(uuid "09000dbc-249b-4d36-939e-bc13c5669846")
-		)
-		(pin "9"
-			(uuid "e0a3d1db-7fc9-42aa-9f37-2c5363b9d849")
-		)
-		(pin "10"
-			(uuid "24de79c4-aee5-497b-a867-82eae721eb4c")
-		)
-		(pin "8"
-			(uuid "6e343b77-e570-4e48-b74d-e19c7de11bdd")
-		)
-		(pin "12"
-			(uuid "ce7d5a96-b639-4956-b79b-421d186e57e8")
-		)
-		(pin "13"
-			(uuid "b2ea2cc1-e609-4d11-a548-f9775dd213c4")
-		)
-		(pin "11"
-			(uuid "6683a0c2-4555-4128-860e-66c258e6a5b1")
-		)
-		(pin "14"
-			(uuid "af35d56d-accc-4add-825c-297b61999fab")
-		)
-		(pin "7"
-			(uuid "bd98ab44-b9c5-4660-80ae-d995b3cdff2c")
-		)
-		(instances
-			(project "Clementina-6502-Pico"
-				(path "/ddb0bb09-4973-4322-81e7-cdd57ff08282/6573b204-c090-453b-93ea-80574efd277d"
-					(reference "U7")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74HC04")
+		(lib_id "74xx:74LS00")
 		(at 120.65 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9b7d6975-0b37-434a-81b0-cddbdade2494")
+		(uuid "21678d7e-000e-4d7a-bf10-b84438effd0a")
 		(property "Reference" "U9"
 			(at 120.65 80.01 0)
 			(effects
@@ -1757,7 +1092,7 @@
 				)
 			)
 		)
-		(property "Value" "74HC04"
+		(property "Value" "74AC00"
 			(at 120.65 82.55 0)
 			(effects
 				(font
@@ -1774,7 +1109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf"
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls00"
 			(at 120.65 88.9 0)
 			(effects
 				(font
@@ -1783,7 +1118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Hex Inverter"
+		(property "Description" "quad 2-input NAND gate"
 			(at 120.65 88.9 0)
 			(effects
 				(font
@@ -1791,56 +1126,236 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "7"
-			(uuid "3aed77b9-7775-40a4-85e3-44ec1de8aa2a")
-		)
-		(pin "14"
-			(uuid "e0ce4a64-6f88-426f-bee9-e6537c38b642")
-		)
-		(pin "12"
-			(uuid "c6d5d86d-c04d-4812-a3be-7433fc14c9d0")
-		)
-		(pin "13"
-			(uuid "e3544555-3404-4387-8710-796f47e70f5d")
-		)
-		(pin "10"
-			(uuid "63d4a8a0-4050-4719-abfa-9ecfbcc2e712")
-		)
-		(pin "11"
-			(uuid "e96b81f0-3782-4985-9aff-38c94850fa2d")
-		)
-		(pin "8"
-			(uuid "983d620b-4752-430f-882e-5aab1dd30d89")
-		)
-		(pin "9"
-			(uuid "5cb197a9-3d13-431d-8bf9-70c86ae56c2c")
-		)
-		(pin "6"
-			(uuid "ba1352fb-6515-4308-8bf6-005190ee1fe6")
-		)
-		(pin "5"
-			(uuid "554cb152-ca8c-4636-b089-64803ff07372")
-		)
-		(pin "4"
-			(uuid "9785f373-4d08-4222-9880-d8a40411244e")
-		)
-		(pin "3"
-			(uuid "b167c6f1-6100-4e04-aee8-8736b867b25c")
-		)
-		(pin "2"
-			(uuid "14c8e8ce-9618-48a4-9318-553255ad84fa")
 		)
 		(pin "1"
-			(uuid "e9798d3e-c831-4c5b-adc2-99ee9de20dbe")
+			(uuid "78cbce7f-ec5f-4111-9dc2-29f83e5cc0cb")
+		)
+		(pin "2"
+			(uuid "3b18869c-040e-40a9-b156-c66b15511fce")
+		)
+		(pin "3"
+			(uuid "445ad46b-664d-4f79-8c4c-d64e84c88145")
+		)
+		(pin "4"
+			(uuid "26346fd7-7bbc-4e72-84eb-c5ab0a02483e")
+		)
+		(pin "5"
+			(uuid "5cfc158f-25dc-436d-93d8-4b37cb41b175")
+		)
+		(pin "6"
+			(uuid "71d53521-8db0-46e9-9e6f-a07b17d6b89c")
+		)
+		(pin "9"
+			(uuid "ee8dde51-1733-4ec4-95be-9459d07adadf")
+		)
+		(pin "10"
+			(uuid "eefe64af-c2b7-4187-bf25-70aa317ad391")
+		)
+		(pin "8"
+			(uuid "ba63ee75-bc87-41ed-9ac1-0210dd7d1898")
+		)
+		(pin "12"
+			(uuid "2a928449-c2d0-44ff-a5db-0b66edbcd44f")
+		)
+		(pin "13"
+			(uuid "b4703d94-0629-4509-95d5-ef61b9cb367d")
+		)
+		(pin "11"
+			(uuid "21199901-de39-4da0-84d0-1101e7616a97")
+		)
+		(pin "14"
+			(uuid "be847f3e-b0ca-4ffd-9e61-bda4ce010e47")
+		)
+		(pin "7"
+			(uuid "30ed9250-916e-44df-91a1-1a36cdb43b16")
 		)
 		(instances
-			(project ""
+			(project "Clementina-6502-Pico"
 				(path "/ddb0bb09-4973-4322-81e7-cdd57ff08282/6573b204-c090-453b-93ea-80574efd277d"
 					(reference "U9")
 					(unit 1)
 				)
 			)
 		)
+	)
+	(wire
+		(pts
+			(xy 107.95 88.9) (xy 110.49 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f50721d-97d4-4413-bcec-40f31142ac50")
+	)
+	(wire
+		(pts
+			(xy 110.49 86.36) (xy 110.49 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2949132b-ca13-47e7-9bcc-e21e14d30cd2")
+	)
+	(wire
+		(pts
+			(xy 110.49 88.9) (xy 110.49 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "032a1196-1fad-4c4b-81b8-a062c07934ad")
+	)
+	(wire
+		(pts
+			(xy 110.49 86.36) (xy 113.03 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4eda0b1-27fb-41d0-bb86-bf779a007fe1")
+	)
+	(wire
+		(pts
+			(xy 110.49 91.44) (xy 113.03 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "893140b5-5da9-4dbb-849f-85c868c0f6fc")
+	)
+	(junction
+		(at 110.49 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a7143c5-a5e7-432d-87a5-bea98a859036")
+	)
+	(symbol
+		(lib_id "74xx:74LS00")
+		(at 140.97 91.44 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e8df13ee-c1d5-4ecc-b9c0-6ef6764528d4")
+		(property "Reference" "U9"
+			(at 140.97 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74AC00"
+			(at 140.97 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
+			(at 140.97 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74ls00"
+			(at 140.97 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 140.97 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62081189-5485-438d-bc45-f07fe4125b62")
+		)
+		(pin "2"
+			(uuid "f755d4a7-3733-4293-9d4c-aed053750bb8")
+		)
+		(pin "3"
+			(uuid "c7da4bd2-2991-42c1-a5b5-d6fc4844e9d0")
+		)
+		(pin "4"
+			(uuid "b91ad7bb-f9d0-4d6a-b450-bf7efc5fbf77")
+		)
+		(pin "5"
+			(uuid "7c1bdba8-4563-4670-ba8c-eb6cd86699fd")
+		)
+		(pin "6"
+			(uuid "36e7860f-f230-458a-8387-9008e916ab64")
+		)
+		(pin "9"
+			(uuid "8a9199b5-aa70-4c0c-b712-9680976f1569")
+		)
+		(pin "10"
+			(uuid "5b1a4679-64d7-4f1d-99fa-2f455fb2fe08")
+		)
+		(pin "8"
+			(uuid "5652c5fc-8e25-4cfc-8b1f-867be539d8df")
+		)
+		(pin "12"
+			(uuid "fd06ceb1-ca38-4205-ab34-4c62e01c0a7a")
+		)
+		(pin "13"
+			(uuid "660984a6-687d-4662-ba23-3797c068fcd1")
+		)
+		(pin "11"
+			(uuid "4c1b2e81-c6f2-48cf-9dc1-562839a5d52e")
+		)
+		(pin "14"
+			(uuid "f8ceaca2-dc1a-4bcf-8f24-fd4431fd862a")
+		)
+		(pin "7"
+			(uuid "eef84148-1dd0-49d7-9986-be42e851155f")
+		)
+		(instances
+			(project "Clementina-6502-Pico"
+				(path "/ddb0bb09-4973-4322-81e7-cdd57ff08282/6573b204-c090-453b-93ea-80574efd277d"
+					(reference "U9")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 148.59 91.44) (xy 177.8 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1a70b33-96be-4df3-92bb-5091c9d71443")
+	)
+	(text "~{WE} comes from a single gate after PHI2, so it rises within\nthe W65C02S's 10 ns address/data hold time. Use a 74AC00:\na 74HC gate at 3.3 V is too slow for that guarantee."
+		(exclude_from_sim no)
+		(at 107.95 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "e85d042f-5233-46ce-a149-821d65996958")
 	)
 )
