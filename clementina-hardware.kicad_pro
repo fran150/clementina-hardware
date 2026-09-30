@@ -226,7 +226,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|1079500|927100|54a11c35-b822-405e-8127-1fb161bfde01|c000f0c3-6214-4038-bb13-52049e0da638|/ddb0bb09-4973-4322-81e7-cdd57ff08282|/ddb0bb09-4973-4322-81e7-cdd57ff08282|/ddb0bb09-4973-4322-81e7-cdd57ff08282",
+        "Pico AGND tied to GND on purpose: the ADC is unused, and the Pico datasheet allows it. Both pins are typed power output in the symbol."
+      ]
+    ],
     "meta": {
       "version": 0
     },

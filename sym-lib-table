@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "clementina")(type "KiCad")(uri "${KIPRJMOD}/clementina.kicad_sym")(options "")(descr "Clementina project symbols"))
+)
