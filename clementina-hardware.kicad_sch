@@ -17395,7 +17395,7 @@
 				)
 			)
 		)
-		(property "Value" "1K"
+		(property "Value" "2.2K"
 			(at 26.67 71.755 90)
 			(effects
 				(font
@@ -21415,7 +21415,7 @@
 			)
 		)
 	)
-	(text "J1, J2 expansion bus / J3 user port (VIA port B)\n- 3.3 V logic only: no 5 V signals on any pin.\n- A card claims one I/O slot by jumpering one of\n  ~{IOCS1}..~{IOCS7} ($C400-$DFFF, 1 KB each).\n- ~{IRQB}, ~{NMI} and RDY are wired-AND with pull-ups\n  on this board: cards pull them low through a Schottky\n  diode or an open-drain output, never drive them high.\n- ~{RESB} is driven by MIA: cards may read it but\n  must never drive it.\n- +5V pins come from the Pico's VBUS (USB 5 V)\n  in rev 1.\n- W65C22S port pins have no current limiting: drive\n  LEDs and similar loads through a resistor."
+	(text "J1, J2 expansion bus / J3 user port (VIA port B)\n- 3.3 V logic only: no 5 V signals on any pin.\n- A card claims one I/O slot by jumpering one of\n  ~{IOCS1}..~{IOCS7} ($C400-$DFFF, 1 KB each).\n- ~{IRQB}, ~{NMI} and RDY are wired-AND with pull-ups\n  on this board: cards pull them low through a Schottky\n  diode or an open-drain output, never drive them high.\n- RDY also goes low while the CPU executes WAI.\n- ~{RESB} is driven by MIA: cards may read it but\n  must never drive it.\n- +5V pins come from the Pico's VBUS (USB 5 V)\n  in rev 1.\n- W65C22S port pins have no current limiting: drive\n  LEDs and similar loads through a resistor."
 		(exclude_from_sim no)
 		(at 350.52 99.06 0)
 		(effects

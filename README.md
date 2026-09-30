@@ -92,8 +92,10 @@ the same logic but lose the write-strobe guarantee, and the VIA's chip select
 limits them to about 3.5 MHz worst case.
 
 Interrupts are wired-AND: MIA and the VIA each pull `~IRQB` low through a BAT85
-Schottky diode against a 4.7 kΩ pull-up. `~NMI` (4.7 kΩ) and RDY (1 kΩ) are
-also pulled up, so expansion cards can use them.
+Schottky diode against a 4.7 kΩ pull-up. `~NMI` (4.7 kΩ) and RDY (2.2 kΩ) are
+also pulled up, so expansion cards can use them. RDY is also an output: the
+CPU pulls it low while it executes `WAI`. The W65C02S only guarantees 1.6 mA
+at 0.4 V there, so the RDY pull-up can't be stronger than about 2 kΩ.
 
 ## Power (rev 1)
 
@@ -154,6 +156,8 @@ Rules for cards on J1-J3:
 - A card claims one I/O slot by jumpering one of `~IOCS1`-`~IOCS7`.
 - `~IRQB`, `~NMI` and RDY: pull them low through a Schottky diode or an
   open-drain output, and never drive them high.
+- RDY also goes low while the CPU executes `WAI`. Don't read RDY low as a
+  wait request from another card.
 - `~RESB` is driven by MIA: read it, never drive it.
 - W65C22S port pins have no current limiting. Drive LEDs and similar loads
   through a resistor.
