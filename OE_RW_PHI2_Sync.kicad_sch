@@ -1127,6 +1127,24 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 120.65 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC00 quad NAND, DIP-14"
+			(at 120.65 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "78cbce7f-ec5f-4111-9dc2-29f83e5cc0cb")
 		)
@@ -1278,6 +1296,24 @@
 			)
 		)
 		(property "Description" "quad 2-input NAND gate"
+			(at 140.97 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 140.97 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC00 quad NAND, DIP-14"
 			(at 140.97 91.44 0)
 			(effects
 				(font

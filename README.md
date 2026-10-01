@@ -216,23 +216,43 @@ so the same parts move from the protoboard build to the board.
   breakout match its own holes. They're optional, to support it with
   standoffs (about 11 mm).
 
-Parts beyond the schematic's own list:
+### Bill of materials
 
-| Qty | Part |
-| ---: | --- |
-| 2 | DIP-40 socket (U1, U3) |
-| 1 | DIP-32 socket (U2) |
-| 1 | DIP-28 socket (U4) |
-| 2 | DIP-16 socket (U6, U8) |
-| 2 | DIP-14 socket (U7, U9) |
-| 2 | 1x20 female header, 2.54 mm (the Pico, with male headers soldered to it) |
-| 1 | 1x9 female header, 2.54 mm (J5) |
-| 1 | Adafruit 4682 microSD breakout |
+Every part has two schematic fields that keep the bill of materials generic,
+so you can source parts yourself (for the protoboard build) or hand them to an
+assembly service:
 
-Footprints: resistors are 1/4 W axial parts at 10.16 mm lead spacing.
-Ceramic capacitors use 5 mm lead spacing; parts with 2.54 mm leads fit if
-you bend the leads. Electrolytics are 5 mm cans with 2.5 mm spacing. The
-diodes are BAT85 (DO-34), and the reset button is a 6 mm tactile switch.
+- **Factory**: what gets soldered to the board at that designator. Chips get a
+  DIP socket, and the Pico (A1) gets two 1x20 female headers.
+- **Plug-in**: what you plug in afterwards, if anything.
+
+[`bom/factory-bom.csv`](bom/factory-bom.csv) lists everything that's
+soldered: passives, diodes, sockets, headers, the jack and the button. With
+those soldered (by you or the factory), the board needs no more soldering;
+plug in these parts:
+
+| Ref | Part |
+| --- | --- |
+| U1 | WDC W65C02S CPU, DIP-40 (W65C02S6TPG-14) |
+| U3 | WDC W65C22S VIA, DIP-40 (W65C22S6TPG-14) |
+| U4 | Alliance AS6C62256-55PCN, 32K x 8 SRAM, DIP-28 |
+| U2 | Alliance AS6C4008-55PCN, 512K x 8 SRAM, DIP-32 |
+| U6, U8 | 74AC138, DIP-16 |
+| U7 | 74AC08, DIP-14 |
+| U9 | 74AC00, DIP-14 |
+| A1 | Raspberry Pi Pico 2 WH (the version with pins already soldered) |
+| J5 | Adafruit 4682 microSD breakout, 3 V |
+
+The Adafruit 4682 ships with its header loose: solder the 9 pins to the
+module once, or use a breakout sold with the header fitted.
+
+The "A1" row of the factory BOM is two headers, one per side of the Pico.
+
+To regenerate the factory BOM after changing parts:
+
+```
+kicad-cli sch export bom --fields 'Factory,${QUANTITY},Reference' --labels 'Part,Qty,References' --group-by Factory --sort-field Reference --sort-asc -o bom/factory-bom.csv clementina-hardware.kicad_sch
+```
 
 Fabrication files:
 

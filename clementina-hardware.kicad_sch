@@ -12879,6 +12879,24 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 170.18 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC00 quad NAND, DIP-14"
+			(at 170.18 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3a32c4ae-7ed0-4f51-99cc-1cbb54d29dad")
 		)
@@ -12974,6 +12992,24 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 238.76 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 238.76 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC08 quad AND, DIP-14"
 			(at 238.76 243.84 0)
 			(effects
 				(font
@@ -13434,6 +13470,24 @@
 			)
 		)
 		(property "Description" "Socket for the Adafruit 4682 microSD breakout (3V only)"
+			(at 281.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Female header 1x9, 2.54 mm, 8.5 mm tall"
+			(at 281.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "Adafruit 4682 microSD breakout, 3 V (solder its header)"
 			(at 281.94 110.49 0)
 			(effects
 				(font
@@ -14313,6 +14367,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
+			(at 25.4 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3224734b-9a2c-4408-b08b-11b967f978f8")
 		)
@@ -14515,6 +14578,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 38.1 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
 			(at 38.1 240.03 0)
 			(effects
 				(font
@@ -14733,6 +14805,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
+			(at 50.8 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fbfef781-a45c-41dd-a23b-b05734e8cab9")
 		)
@@ -14935,6 +15016,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 63.5 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
 			(at 63.5 240.03 0)
 			(effects
 				(font
@@ -15153,6 +15243,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
+			(at 76.2 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f005ebb0-775b-458f-b3d3-62cc3e47b3b2")
 		)
@@ -15355,6 +15454,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 88.9 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
 			(at 88.9 240.03 0)
 			(effects
 				(font
@@ -15573,6 +15681,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
+			(at 101.6 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bf6e68df-0143-4b28-bccb-0f0eca461846")
 		)
@@ -15783,6 +15900,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
+			(at 114.3 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3cf4883a-c6af-4688-8402-1ab63f76c132")
 		)
@@ -15985,6 +16111,15 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 127 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Electrolytic capacitor 22 µF, 16 V, radial, 5 mm diameter, 2.5 mm lead spacing"
 			(at 127 240.03 0)
 			(effects
 				(font
@@ -16288,6 +16423,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Resistor 220 Ω, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
+			(at 316.23 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a9addf2b-36ad-4f8e-a993-84ef0a5f2c7c")
 		)
@@ -16399,6 +16543,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
+			(at 325.12 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5f972643-6416-4c5e-bfe7-0bf1b60f871c")
 		)
@@ -16468,6 +16621,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Resistor 100 Ω, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
+			(at 337.82 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5b7de0c1-e453-45b7-9524-ba29a94eb380")
 		)
@@ -16527,6 +16689,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 351.79 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Electrolytic capacitor 47 µF, 16 V, radial, 5 mm diameter, 2.5 mm lead spacing"
 			(at 351.79 152.4 0)
 			(effects
 				(font
@@ -16632,6 +16803,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 360.68 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Resistor 1.8 kΩ, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
 			(at 360.68 156.21 0)
 			(effects
 				(font
@@ -16834,6 +17014,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Resistor 220 Ω, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
+			(at 316.23 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f554f881-a59d-4f2e-9c93-bb38901ef95c")
 		)
@@ -16945,6 +17134,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Ceramic capacitor 100 nF, 50 V, X7R, radial, 5.08 mm lead spacing"
+			(at 325.12 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3327daeb-c311-43c5-99a3-0649e933467e")
 		)
@@ -17014,6 +17212,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Resistor 100 Ω, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
+			(at 337.82 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c797adea-e79c-4f94-b547-14e01b876eea")
 		)
@@ -17073,6 +17280,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 351.79 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Electrolytic capacitor 47 µF, 16 V, radial, 5 mm diameter, 2.5 mm lead spacing"
 			(at 351.79 172.72 0)
 			(effects
 				(font
@@ -17178,6 +17394,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 360.68 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Resistor 1.8 kΩ, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
 			(at 360.68 176.53 0)
 			(effects
 				(font
@@ -17360,6 +17585,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "3.5 mm stereo jack, CUI SJ1-3533NG or same footprint"
+			(at 398.78 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "R"
 			(uuid "be88dcb9-3793-49a3-ae20-7ecd972bc8dc")
 		)
@@ -17422,6 +17656,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 26.67 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Resistor 2.2 kΩ, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
 			(at 26.67 68.58 0)
 			(effects
 				(font
@@ -17639,6 +17882,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 26.67 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Resistor 4.7 kΩ, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
 			(at 26.67 58.42 0)
 			(effects
 				(font
@@ -17986,6 +18238,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers)"
+			(at 327.66 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "IDC box header 2x20, 2.54 mm, vertical"
 			(at 327.66 50.8 0)
 			(effects
 				(font
@@ -19305,6 +19566,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "IDC box header 2x20, 2.54 mm, vertical"
+			(at 368.3 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f2d5cfa5-ca69-4690-8844-62f112acd870")
 		)
@@ -20616,6 +20886,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "IDC box header 2x10, 2.54 mm, vertical"
+			(at 327.66 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "55c4750a-d09f-461f-9e89-46d93e67022b")
 		)
@@ -21545,6 +21824,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Resistor 10 kΩ, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
+			(at 203.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b84f9125-e6bc-413d-9c13-f1b5966704a5")
 		)
@@ -21606,6 +21894,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 208.28 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Ceramic capacitor 1 µF, 50 V, X7R, radial, 5.08 mm lead spacing"
 			(at 208.28 149.86 0)
 			(effects
 				(font
@@ -21746,6 +22043,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Resistor 100 Ω, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
+			(at 215.9 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "96f3cda3-7b92-4711-b745-b43e010d351f")
 		)
@@ -21805,6 +22111,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 227.33 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "Tactile switch 6 x 6 mm, through-hole"
 			(at 227.33 143.51 0)
 			(effects
 				(font
@@ -22134,6 +22449,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "Resistor 4.7 kΩ, 1/4 W, 1% metal film, axial, 10.16 mm lead spacing"
+			(at 25.4 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3980b3b7-69c5-45e7-8c78-80195a7757ec")
 		)
@@ -22201,6 +22525,15 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "BAT85 Schottky diode, DO-34"
+			(at 40.64 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "020e04a3-1e08-400a-a846-2b5aa6b625d2")
 		)
@@ -22260,6 +22593,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 40.64 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "BAT85 Schottky diode, DO-34"
 			(at 40.64 43.18 0)
 			(effects
 				(font
@@ -22421,6 +22763,24 @@
 			)
 		)
 		(property "Description" "8-bit CMOS General Purpose Microprocessor, DIP-40"
+			(at 38.1 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "DIP-40 socket, 15.24 mm (0.6 in) rows"
+			(at 38.1 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "WDC W65C02S CPU, DIP-40 (W65C02S6TPG-14)"
 			(at 38.1 152.4 0)
 			(effects
 				(font
@@ -22678,6 +23038,24 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "DIP-40 socket, 15.24 mm (0.6 in) rows"
+			(at 204.47 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "WDC W65C22S VIA, DIP-40 (W65C22S6TPG-14)"
+			(at 204.47 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "f056e5f2-c01d-4d63-8dbd-7e25df12f7e9")
 		)
@@ -22920,6 +23298,24 @@
 		)
 		(property "Description" "Versatile and inexpensive wireless microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash, Infineon CYW43439 2.4GHz 802.11n wireless LAN; also supports Raspberry Pi Pico 2 W"
 			(at 107.95 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "2 x female header 1x20, 2.54 mm, 8.5 mm tall (both at A1, one per Pico side)"
+			(at 107.95 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "Raspberry Pi Pico 2 WH (pins pre-soldered)"
+			(at 107.95 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23175,6 +23571,24 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 203.2 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC08 quad AND, DIP-14"
+			(at 203.2 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0c68cd6-4f63-451a-9054-8006739b9826")
 		)
@@ -23412,6 +23826,24 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 144.78 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC08 quad AND, DIP-14"
+			(at 144.78 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b0c68cd6-4f63-451a-9054-8006739b9824")
 		)
@@ -23508,6 +23940,24 @@
 			)
 		)
 		(property "Description" "Quad And2"
+			(at 203.2 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 203.2 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC08 quad AND, DIP-14"
 			(at 203.2 236.22 0)
 			(effects
 				(font
@@ -23678,6 +24128,24 @@
 			)
 		)
 		(property "Description" "32,768-word × 8-bit High Speed CMOS Static RAM, 70ns, DIP-28"
+			(at 140.97 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "DIP-28 socket, 15.24 mm (0.6 in) rows"
+			(at 140.97 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "Alliance AS6C62256-55PCN 32K x 8 SRAM, DIP-28"
 			(at 140.97 156.21 0)
 			(effects
 				(font
@@ -23957,6 +24425,24 @@
 			)
 		)
 		(property "Description" "512K x 8 Low Power CMOS RAM, DIP-32"
+			(at 248.92 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "DIP-32 socket, 15.24 mm (0.6 in) rows"
+			(at 248.92 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "Alliance AS6C4008-55PCN 512K x 8 SRAM, DIP-32"
 			(at 248.92 50.8 0)
 			(effects
 				(font

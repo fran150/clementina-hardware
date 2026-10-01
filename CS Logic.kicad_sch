@@ -3268,6 +3268,24 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 129.54 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC00 quad NAND, DIP-14"
+			(at 129.54 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e1755328-f9e9-42f6-a874-0b0eec8e7835")
 		)
@@ -3419,6 +3437,24 @@
 			)
 		)
 		(property "Description" "quad 2-input NAND gate"
+			(at 129.54 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 129.54 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC00 quad NAND, DIP-14"
 			(at 129.54 115.57 0)
 			(effects
 				(font
@@ -3887,6 +3923,24 @@
 				(hide yes)
 			)
 		)
+		(property "Factory" "DIP-14 socket, 7.62 mm (0.3 in) rows"
+			(at 129.54 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC08 quad AND, DIP-14"
+			(at 129.54 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bc3497c9-56a1-4114-8d8e-7bc9163d879b")
 		)
@@ -3984,6 +4038,24 @@
 			)
 		)
 		(property "Description" "3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
+			(at 88.9 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "DIP-16 socket, 7.62 mm (0.3 in) rows"
+			(at 88.9 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC138 3-to-8 decoder, DIP-16"
 			(at 88.9 68.58 0)
 			(effects
 				(font
@@ -4095,6 +4167,24 @@
 			)
 		)
 		(property "Description" "3-to-8 line decoder/multiplexer inverting, DIP-16/SOIC-16/SSOP-16"
+			(at 142.24 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Factory" "DIP-16 socket, 7.62 mm (0.3 in) rows"
+			(at 142.24 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Plug-in" "74AC138 3-to-8 decoder, DIP-16"
 			(at 142.24 59.69 0)
 			(effects
 				(font
