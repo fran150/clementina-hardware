@@ -7,5 +7,8 @@ _autosave-*
 *.bak
 \#auto_saved_files#
 
+# Generated fabrication outputs (see README, "Fabrication files")
+fabrication/
+
 # macOS
 .DS_Store

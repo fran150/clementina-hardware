@@ -254,12 +254,33 @@ To regenerate the factory BOM after changing parts:
 kicad-cli sch export bom --fields 'Factory,${QUANTITY},Reference' --labels 'Part,Qty,References' --group-by Factory --sort-field Reference --sort-asc -o bom/factory-bom.csv clementina-hardware.kicad_sch
 ```
 
-Fabrication files:
+### Fabrication files
+
+The Gerbers are generated from the board, so they aren't committed: git
+ignores `fabrication/`. Rebuild them after any board change:
 
 ```
-kicad-cli pcb export gerbers -l F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,B.Silkscreen,Edge.Cuts -o fab/ clementina-hardware.kicad_pcb
-kicad-cli pcb export drill -o fab/ clementina-hardware.kicad_pcb
+mkdir -p fabrication/gerbers
+kicad-cli pcb export gerbers --no-x2 --no-netlist --subtract-soldermask -l F.Cu,B.Cu,F.Mask,B.Mask,F.Silkscreen,Edge.Cuts -o fabrication/gerbers/ clementina-hardware.kicad_pcb
+kicad-cli pcb export drill --excellon-separate-th -o fabrication/gerbers/ clementina-hardware.kicad_pcb
+rm fabrication/gerbers/*.gbrjob
+zip -j -FS fabrication/clementina-rev1-gerbers.zip fabrication/gerbers/*
 ```
+
+Upload `fabrication/clementina-rev1-gerbers.zip` to the fab. It holds eight
+files: both copper layers, both masks, the front silkscreen, the board outline,
+and separate drill files for plated and unplated holes.
+
+- `--no-x2 --no-netlist`: PCBWay's KiCad guide asks for Gerbers without X2
+  attributes. With them, its upload preview showed only the holes.
+- No back silkscreen: it's empty.
+- `--subtract-soldermask` keeps silkscreen ink off the pads.
+- The zip leaves out KiCad's `.gbrjob` job file.
+- `zip -FS` also removes files that are no longer in `fabrication/gerbers/`.
+
+When you order boards, tag the commit you ordered from and attach the zip you
+uploaded to a GitHub release on that tag. That keeps a record of exactly what
+was made.
 
 ## Not in rev 1
 
